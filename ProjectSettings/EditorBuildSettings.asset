@@ -5,9 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Create-with-VR-Starter-Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/EcranAccueil.unity
+    guid: 4e9fef26e6adb88479ad1b9834a32d94
+  - enabled: 1
+    path: Assets/Scenes/Donjon.unity
+    guid: 942d8d554d58a964dbc80acef9256218
+  - enabled: 1
+    path: Assets/Scenes/Robespierre.unity
+    guid: c9c0e7c9f030e9648a389d78b3a56436
+  - enabled: 1
+    path: Assets/Scenes/Sacre.unity
+    guid: 60e2b3ffe6550a74880915606663f9eb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
