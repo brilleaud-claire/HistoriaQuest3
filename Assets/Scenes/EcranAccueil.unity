@@ -794,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.952, y: -2.186}
+  m_AnchoredPosition: {x: -1.952, y: -2.126}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833359344
@@ -817,12 +817,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello fellow traveler !
-
-    Your journey will begin and you''ll travel
-    through time !
-
-    We hope you''ll travel safely '
+  m_text: "Bonjour voyageur !\nTon voyage va commencer \xE0 travers le temps !\nLe
+    syst\xE8me te souhaite un bon voyage.\nN'h\xE9site pas \xE0 solliciter le scientifique,
+    ta s\xE9curit\xE9 est sa priorit\xE9 !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 108ebb9a1d9c11b4b9abec34330722d3, type: 2}
   m_sharedMaterial: {fileID: 7372154519077955756, guid: 108ebb9a1d9c11b4b9abec34330722d3,
@@ -1507,7 +1504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0278413, y: -2.639}
+  m_AnchoredPosition: {x: -2.0278413, y: -2.812}
   m_SizeDelta: {x: 130, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704747796
