@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sacre.unity
     guid: 60e2b3ffe6550a74880915606663f9eb
+  - enabled: 1
+    path: Assets/Scenes/SalonMondain.unity
+    guid: 2b8279b5d5a610247b6e012819158610
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
