@@ -10,11 +10,19 @@ public class DateLogique : MonoBehaviour
     public TMP_Text dateResult;
     public void btnnum(char num)
     {
+        if (dateResult.text.Length != 4)
+        {
+            while (dateResult.text.Length < 4)
+            {
+                dateResult.text += '.';
+            }
+        }
+
         if (dateResult.text.Contains('.'))
         {
             bool test = false;
             string date = "";
-            for (int i = 0; i < 3 && !test; i++)
+            for (int i = 0; i < dateResult.text.Length && !test; i++)
             {
 
                 if (dateResult.text[i] == '.' && !test)
@@ -82,10 +90,17 @@ public class DateLogique : MonoBehaviour
         bool test = false;
         int index = -1;
         string date = "";
-        for (int i = 0; i < 4 && !test; i++)
+        if (dateResult.text.Length != 4)
+        {
+            while (dateResult.text.Length < 4)
+            {
+                dateResult.text += '.';
+            }
+        }
+        for (int i = 0; i < dateResult.text.Length && !test; i++)
         {
 
-            if (dateResult.text[i] == '.' && !test)
+            if (dateResult.text[i] == '.')
             {
                 test = true;
                 index = i;
