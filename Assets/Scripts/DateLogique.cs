@@ -82,7 +82,7 @@ public class DateLogique : MonoBehaviour
         bool test = false;
         int index = -1;
         string date = "";
-        for (int i = 0; i < 3 && !test; i++)
+        for (int i = 0; i < 4 && !test; i++)
         {
 
             if (dateResult.text[i] == '.' && !test)
@@ -91,9 +91,9 @@ public class DateLogique : MonoBehaviour
                 index = i;
             }
         }
-        if (index == -1)
+        if (index != -1)
         {
-            for (int i = 0; i <= 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (i == index - 1)
                 {
@@ -105,6 +105,7 @@ public class DateLogique : MonoBehaviour
                 }
             }
         }
+        else
         {
            date = "1...";
         }
