@@ -15,11 +15,11 @@ public class GameManager : MonoBehaviour
     public static bool keyInHole = false;
 
 
-    public Text Menu;
+    //public Text Menu;
     void Start()
     {
         time = 0;
-        Menu.text = "System ERROR : please find a solution before the time is up, or you will be stuck here";
+        //Menu.text = "System ERROR : please find a solution before the time is up, or you will be stuck here";
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         if (SacreSuccess && SalonSuccess && GuillotineSuccess)
         {
             WinScenario = true;
-            key.SetActive(true);
+            
         }
     }
 }
