@@ -6,12 +6,25 @@ using UnityEngine.SceneManagement;
 public class SceneValidated : MonoBehaviour
 {
     // Start is called before the first frame update
+    public string toSceneName;
     public string sceneName;
 
-    public void StartBt()
+    public void SucessScene()
     {
 
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(toSceneName);
+        if (sceneName == "Sacre")
+        {
+            GameManager.SacreSuccess = true;
+        }
+        else if (sceneName == "SalonMondain")
+        {
+            GameManager.SalonSuccess = true;
+        }
+        else if (sceneName == "Robespierre")
+        {
+            GameManager.GuillotineSuccess = true;
+        }
 
     }
 }

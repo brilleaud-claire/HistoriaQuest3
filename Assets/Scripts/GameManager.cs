@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static bool SacreSuccess = false;
     public static bool SalonSuccess = false;
     public static bool GuillotineSuccess = false;
+    public static bool WinScenario = false;
     public static float time;
 
 
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
         
         if (SacreSuccess && SalonSuccess && GuillotineSuccess)
         {
-            
+            WinScenario = true;
         }
     }
 }
