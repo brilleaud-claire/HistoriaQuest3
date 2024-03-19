@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public static bool GuillotineSuccess = false;
     public static bool WinScenario = false;
     public static float time;
+    public GameObject key;
+    public static bool keyInHole = false;
 
 
     public Text Menu;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
         if (SacreSuccess && SalonSuccess && GuillotineSuccess)
         {
             WinScenario = true;
+            key.SetActive(true);
         }
     }
 }
