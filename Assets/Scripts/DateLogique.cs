@@ -13,7 +13,7 @@ public class DateLogique : MonoBehaviour
         if (dateResult.text.Contains('.'))
         {
             bool test = false;
-            string date = "1";
+            string date = "";
             for (int i = 0; i < 3 && !test; i++)
             {
 
@@ -80,7 +80,7 @@ public class DateLogique : MonoBehaviour
     public void btnReturn()
     {
         bool test = false;
-        int index = 0;
+        int index = -1;
         string date = "";
         for (int i = 0; i < 3 && !test; i++)
         {
@@ -91,17 +91,24 @@ public class DateLogique : MonoBehaviour
                 index = i;
             }
         }
-        for (int i = 0; i <= index && !test; i++)
+        if (index == -1)
         {
-            if (i == index - 1)
+            for (int i = 0; i <= 4; i++)
             {
-                date += '.';
-            }
-            else
-            {
-                date += dateResult.text[i];
+                if (i == index - 1)
+                {
+                    date += '.';
+                }
+                else
+                {
+                    date += dateResult.text[i];
+                }
             }
         }
+        {
+           date = "1...";
+        }
+        
         dateResult.text = date;
     }
 
