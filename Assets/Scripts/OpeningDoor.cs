@@ -5,16 +5,15 @@ using UnityEngine;
 public class OpeningDoor : MonoBehaviour
 {
     public GameObject lockdoor;
-    public void keyInHole()
-    {
-        if (GameManager.WinScenario == true)
-        {
-            GameManager.keyInHole = true;
-        }
-    }
+    public Animator door;
 
     public void openDoor()
     {
-        lockdoor.GetComponent<BoxCollider>().enabled = true;
+        if(GameManager.keyInHole == true)
+        {
+            door = GetComponent<Animator>();
+            door.SetBool("RotationPorte", true);
+        }
+
     }
 }

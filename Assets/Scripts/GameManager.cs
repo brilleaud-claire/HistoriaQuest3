@@ -27,10 +27,10 @@ public class GameManager : MonoBehaviour
     {
         time += Time.deltaTime;
         
-        if (SacreSuccess && SalonSuccess && GuillotineSuccess)
+        if (SacreSuccess==true && SalonSuccess==true && GuillotineSuccess==true)
         {
             WinScenario = true;
-            
+            key.SetActive(true);
         }
     }
 }
