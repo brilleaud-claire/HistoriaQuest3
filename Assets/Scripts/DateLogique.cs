@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using System;
 
 public class DateLogique : MonoBehaviour
 {
     public TMP_Text dateResult;
+    public Color32 c;
     public void btnnum(char num)
     {
+        
+        //dateResult.color = c;
         if (dateResult.text.Length != 4)
         {
             while (dateResult.text.Length < 4)
@@ -22,7 +25,7 @@ public class DateLogique : MonoBehaviour
         {
             bool test = false;
             string date = "";
-            for (int i = 0; i < dateResult.text.Length && !test; i++)
+            for (int i = 0; i < dateResult.text.Length; i++)
             {
 
                 if (dateResult.text[i] == '.' && !test)
@@ -88,7 +91,7 @@ public class DateLogique : MonoBehaviour
     public void btnReturn()
     {
         bool test = false;
-        int index = -1;
+        int index = 4;
         string date = "";
         if (dateResult.text.Length != 4)
         {
@@ -97,16 +100,18 @@ public class DateLogique : MonoBehaviour
                 dateResult.text += '.';
             }
         }
-        for (int i = 0; i < dateResult.text.Length && !test; i++)
+        for (int i = 0; i < dateResult.text.Length; i++)
         {
 
-            if (dateResult.text[i] == '.')
+            if (dateResult.text[i] == '.' && test == false)
             {
-                test = true;
                 index = i;
+                test = true;
+                
             }
         }
-        if (index != -1)
+        //Console.WriteLine(index);
+        if (index != 1)
         {
             for (int i = 0; i < 4; i++)
             {
@@ -119,13 +124,12 @@ public class DateLogique : MonoBehaviour
                     date += dateResult.text[i];
                 }
             }
-        }
-        else
-        {
-           date = "1...";
+            dateResult.text = date;
         }
         
-        dateResult.text = date;
+        
+        
+        
     }
 
     void Maj()
