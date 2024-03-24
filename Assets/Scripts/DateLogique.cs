@@ -12,7 +12,7 @@ public class DateLogique : MonoBehaviour
     public void btnnum(char num)
     {
         
-        //dateResult.color = c;
+        dateResult.color = c;
         if (dateResult.text.Length != 4)
         {
             while (dateResult.text.Length < 4)
