@@ -35,11 +35,11 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
-  m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017134505, g: 0.000000026348365, b: 0, a: 1}
-  m_UseRadianceAmbientProbe: 0
+ m_ReflectionIntensity: 1
+m_CustomReflection: {fileID: 0}
+m_Sun: {fileID: 0}
+m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -673,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
+  MonoBehaviour:
   minIntensity: 250
   maxIntensity: 357.45
   startAtMin: 1
