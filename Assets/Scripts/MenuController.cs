@@ -7,11 +7,12 @@ public class MenuController : MonoBehaviour
 {
     // Start is called before the first frame update
     public string sceneName;
+   
 
     public void StartBt()
     {
-        
-         SceneManager.LoadScene(sceneName);
+         
+        SceneManager.LoadScene(sceneName);
         
     }
 }

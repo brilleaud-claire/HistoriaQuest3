@@ -15641,9 +15641,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Faille spacio-temporelle
-
-    Demandez de l''aide au scientifique'
+  m_text: "Faille spacio-temporelle\nS\xE9curisation r\xE9ussie\nDemandez de l'aide
+    au scientifique"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 108ebb9a1d9c11b4b9abec34330722d3, type: 2}
   m_sharedMaterial: {fileID: 7372154519077955756, guid: 108ebb9a1d9c11b4b9abec34330722d3,
