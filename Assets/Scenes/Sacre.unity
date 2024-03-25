@@ -12260,6 +12260,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465101860}
   m_CullTransparentMesh: 1
+--- !u!1001 &1474540665
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12402,7 +12403,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504086135}
   m_CullTransparentMesh: 1
-
+--- !u!1 &1506230093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506230094}
+  - component: {fileID: 1506230096}
+  - component: {fileID: 1506230095}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1506230094
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17468,20 +17487,3 @@ SceneRoots:
   - {fileID: 901831456}
   - {fileID: 729624183}
   - {fileID: 1474540665}
-  - {fileID: 755618824}
-  - {fileID: 1755865807}
-  - {fileID: 1454314536}
-  - {fileID: 314452079}
-  - {fileID: 1002771668}
-  - {fileID: 1445340747}
-  - {fileID: 672868339}
-  - {fileID: 1610100350}
-  - {fileID: 762995593}
-  - {fileID: 1968720221}
-  - {fileID: 1856186100}
-  - {fileID: 1270294768}
-  - {fileID: 499999079}
-  - {fileID: 1868794821}
-  - {fileID: 105629233}
-  - {fileID: 78903935}
-  - {fileID: 1084082762}
