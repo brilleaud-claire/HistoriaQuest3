@@ -13,7 +13,9 @@ public class OpeningDoor : MonoBehaviour
         {
             door = GetComponent<Animator>();
             door.SetBool("RotationPorte", true);
+            
         }
 
     }
+    
 }
