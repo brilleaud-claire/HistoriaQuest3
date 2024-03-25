@@ -1676,6 +1676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toSceneName: Donjon
   sceneName: Robespierre
+  lieuAnswer: 
+  okButtonLieu: {fileID: 0}
+  ResultLieu: {fileID: 0}
 --- !u!114 &617011079
 MonoBehaviour:
   m_ObjectHideFlags: 0
