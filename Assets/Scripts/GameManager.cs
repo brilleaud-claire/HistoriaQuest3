@@ -42,7 +42,13 @@ public class GameManager : MonoBehaviour
         {
             counterTime = 0;
             LooseScenario = true;
-            SceneManager.LoadScene("EcranAccueil");
+            StartCoroutine(LooseScenarioScene());
         }
     }
+    IEnumerator LooseScenarioScene()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("EcranAccueil");
+    }
+
 }
