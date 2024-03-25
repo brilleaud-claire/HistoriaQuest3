@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
-    private void Awake()
+    private void Update()
     {
         if (GameManager.keyInHole == true)
         {

@@ -10,27 +10,37 @@ public class GameManager : MonoBehaviour
     public static bool SalonSuccess = false;
     public static bool GuillotineSuccess = false;
     public static bool WinScenario = false;
-    public static float time;
+    public static bool LooseScenario = false;
+    public static float timePassed;
     public GameObject key;
     public static bool keyInHole = false;
-
+    public static float counterTime = 1800.0f;
 
     //public Text Menu;
     void Start()
     {
-        time = 0;
+        
         //Menu.text = "System ERROR : please find a solution before the time is up, or you will be stuck here";
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        
-        if (SacreSuccess==true && SalonSuccess==true && GuillotineSuccess==true)
+        timePassed = StaticVar.num;
+        if (counterTime > 0)
         {
-            WinScenario = true;
-            key.SetActive(true);
+            counterTime = 1800 - timePassed;
+
+            if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true)
+            {
+                WinScenario = true;
+                key.SetActive(true);
+            }
+        }
+        else
+        {
+            counterTime = 0;
+            LooseScenario = true;
         }
     }
 }
