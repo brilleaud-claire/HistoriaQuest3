@@ -18,6 +18,7 @@ public class MenuChange : MonoBehaviour
     public string dateAnswer;
     void Start()
     {
+        
         secondMenu.SetActive(false);
         thirdMenu.SetActive(false);
         //firstMenu.SetActive(true);
@@ -47,7 +48,8 @@ public class MenuChange : MonoBehaviour
     }
     public void SwitchMenusDateToLieu()
     {
-      
+  
+
         if (ResultDate.text == dateAnswer)
         {
             StartCoroutine(waitTime("DateToLieu"));

@@ -13,11 +13,12 @@ public class EventMenu : MonoBehaviour
     public int totalElement;
     public Color32 c;
     public TMP_Text answer;
+    public GameObject keyboard;
 
 
     void Start()
     {
-        
+        keyboard.SetActive(false);
         totalElement = Content.transform.childCount;
         Element = new GameObject[totalElement];
         for(int i =0; i<totalElement; i++)
@@ -27,6 +28,14 @@ public class EventMenu : MonoBehaviour
         }
 
     }
+    public void OpenKeyboard()
+    {
+        keyboard.SetActive(true);
+    }
+    public void CloseKeyboard()
+    {
+        keyboard.SetActive(true);
+    }
     public void Search()
     {
         /*
@@ -35,7 +44,7 @@ public class EventMenu : MonoBehaviour
             answer.color = c;
             answer.text = ". . . . . . . . . . . . . . . . . . . . . . .";
         }*/
-
+       
         string SearchText = SearchBar.GetComponent<TMP_InputField>().text;
         int searchTxtlenght = SearchText.Length;
         int searchedElements = 0;
