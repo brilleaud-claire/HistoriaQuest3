@@ -5538,7 +5538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1196623672}
   SearchBar: {fileID: 1455448369}
-  Answer: {fileID: 0}
+  Answer: {fileID: 1455448369}
   answer: 
 --- !u!1001 &762995593
 PrefabInstance:
