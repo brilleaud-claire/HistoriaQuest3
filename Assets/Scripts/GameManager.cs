@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timePassed = StaticVar.num;
+        timePassed = Time.deltaTime;
         if (counterTime > 0)
         {
             counterTime = 1800 - timePassed;
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         {
             counterTime = 0;
             LooseScenario = true;
+            SceneManager.LoadScene("EcranAccueil");
         }
     }
 }

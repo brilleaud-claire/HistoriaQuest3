@@ -12,7 +12,14 @@ public class ShowTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeTxt.text = "Temps: " + GetTime(GameManager.counterTime);
+        if (GameManager.LooseScenario == false)
+        {
+            timeTxt.text = "Temps: " + GetTime(GameManager.counterTime);
+        }
+        else
+        {
+            timeTxt.text = "LOOSER";
+        }
     }
     private static string GetTime(float timeInSeconds)
     {
