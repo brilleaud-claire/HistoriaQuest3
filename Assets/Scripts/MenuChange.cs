@@ -68,7 +68,7 @@ public class MenuChange : MonoBehaviour
         }
         else
         {
-            ResultEvent.text = "";
+            
             ResultEvent.color = Color.red;
         }
 
