@@ -9,37 +9,69 @@ public class MenuChange : MonoBehaviour
 {
     public GameObject firstMenu;
     public GameObject secondMenu;
-    public string goodDate;
-    public TMP_Text dateResult;
-    public Button okButton;
-
+    public GameObject thirdMenu;
+    public TMP_Text ResultEvent;
+    public Button okButtonEvent;
+    public TMP_Text ResultDate;
+    public Button okButtonDate;
+    public string eventAnswer;
+    public string dateAnswer;
     void Start()
     {
         secondMenu.SetActive(false);
+        thirdMenu.SetActive(false);
         //firstMenu.SetActive(true);
     }
     
-    IEnumerator waitTime()
+    IEnumerator waitTime(string s)
     {
-        dateResult.color = Color.green;
-
-        okButton.GetComponent<Image>().color = Color.green;
-        yield return new WaitForSeconds(2);
-        secondMenu.SetActive(true);
-        firstMenu.SetActive(false);
+        
+        if(s == "EventToDate")
+        {
+            ResultEvent.color = Color.green;
+            okButtonEvent.GetComponent<Image>().color = Color.green;
+            yield return new WaitForSeconds(2);
+            secondMenu.SetActive(true);
+            firstMenu.SetActive(false);
+        }
+        else if (s == "DateToLieu")
+        {
+            ResultDate.color = Color.green;
+            okButtonDate.GetComponent<Image>().color = Color.green;
+            yield return new WaitForSeconds(2);
+            thirdMenu.SetActive(true);
+            secondMenu.SetActive(false);
+        }
+     
+        
     }
-    public void SwitchMenus()
+    public void SwitchMenusDateToLieu()
     {
       
-        if (dateResult.text == goodDate)
+        if (ResultDate.text == dateAnswer)
         {
-            StartCoroutine(waitTime());
+            StartCoroutine(waitTime("DateToLieu"));
         }
         else
         {
-            dateResult.text = "1...";
-            dateResult.color = Color.red;
+            ResultDate.text = "1...";
+            ResultDate.color = Color.red;
         }
         
     }
+    public void SwitchMenusEventToDate()
+    {
+
+        if (ResultEvent.text == eventAnswer)
+        {
+            StartCoroutine(waitTime("EventToDate"));
+        }
+        else
+        {
+            ResultEvent.text = "";
+            ResultEvent.color = Color.red;
+        }
+
+    }
+    
 }

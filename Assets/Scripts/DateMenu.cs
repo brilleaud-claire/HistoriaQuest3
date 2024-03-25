@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class DateLogique : MonoBehaviour
+public class DateMenu : MonoBehaviour
 {
     public TMP_Text dateResult;
     public Color32 c;
