@@ -17,17 +17,12 @@ public class GameManager : MonoBehaviour
     public static bool keyInHole = false;
     public static float counterTime = 1800.0f;
 
-    //public Text Menu;
-    void Start()
-    {
-        
-        //Menu.text = "System ERROR : please find a solution before the time is up, or you will be stuck here";
-    }
-
+    
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        timePassed = Time.deltaTime;
+        timePassed = timePassed + Time.deltaTime;
+        
         if (counterTime > 0)
         {
             counterTime = 1800 - timePassed;
