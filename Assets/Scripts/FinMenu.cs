@@ -8,7 +8,7 @@ public class FinMenu : MonoBehaviour
 {
     public Button okButton;
     public TMP_Text Result;
-    public string answer;
+    
 
     IEnumerator waitTime()
     {
@@ -19,9 +19,10 @@ public class FinMenu : MonoBehaviour
 
     public void MenuFin()
     {
-        if (Result.text == answer)
+        if (Result.text == GameManager.answer)
         {
             StartCoroutine(waitTime());
+            GameManager.goodAnswer = true;
         }
     }
 

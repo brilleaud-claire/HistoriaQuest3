@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public static bool WinScenario = false;
     public static bool LooseScenario = false;
     public static float timePassed;
-    public static string answer;
+    public static string answer = "Josephine";
     public static bool goodAnswer = false;
     public GameObject key;
     public static bool keyInHole = false;
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             counterTime = 1800 - timePassed;
 
-            if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true)
+            if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true && goodAnswer == true)
             {
                 WinScenario = true;
                 key.SetActive(true);
