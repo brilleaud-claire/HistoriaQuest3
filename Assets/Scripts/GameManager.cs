@@ -18,9 +18,14 @@ public class GameManager : MonoBehaviour
     public GameObject key;
     public static bool keyInHole = false;
     public static float counterTime = 1800.0f;
+    public GameObject menuFin;
 
     
     // Update is called once per frame
+    void Start()
+    {
+        menuFin.SetActive(false);
+    }
     void FixedUpdate()
     {
         timePassed = timePassed + Time.deltaTime;
@@ -29,10 +34,14 @@ public class GameManager : MonoBehaviour
         {
             counterTime = 1800 - timePassed;
 
-            if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true && goodAnswer == true)
+            if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true)
             {
-                WinScenario = true;
-                key.SetActive(true);
+                menuFin.SetActive(true);
+                if(goodAnswer == true)
+                {
+                    WinScenario = true;
+                    key.SetActive(true);
+                }
             }
         }
         else
