@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static bool WinScenario = false;
     public static bool LooseScenario = false;
     public static float timePassed;
+    public static int nbrObjetcs = 3;
     public static string answer = "Josephine";
     public static bool goodAnswer = false;
     public GameObject key;

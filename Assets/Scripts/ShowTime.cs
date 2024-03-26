@@ -15,7 +15,7 @@ public class ShowTime : MonoBehaviour
        
         if (GameManager.LooseScenario == false)
         {
-            timeTxt.text = "Temps: " + GetTime(GameManager.counterTime);
+            timeTxt.text = "Temps: " + GetTime(GameManager.counterTime) +"\nObjets restants : "+GameManager.nbrObjetcs;
         }
         else
         {

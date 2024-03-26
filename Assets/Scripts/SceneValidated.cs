@@ -34,14 +34,17 @@ public class SceneValidated : MonoBehaviour
             if (sceneName == "Sacre")
             {
                 GameManager.SacreSuccess = true;
+                GameManager.nbrObjetcs = GameManager.nbrObjetcs - 1;
             }
             else if (sceneName == "SalonMondain")
             {
                 GameManager.SalonSuccess = true;
+                GameManager.nbrObjetcs = GameManager.nbrObjetcs - 1;
             }
             else if (sceneName == "Robespierre")
             {
                 GameManager.GuillotineSuccess = true;
+                GameManager.nbrObjetcs = GameManager.nbrObjetcs - 1;
             }
         }
         else

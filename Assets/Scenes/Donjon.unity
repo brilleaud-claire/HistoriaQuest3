@@ -463,7 +463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 14.1}
+  m_AnchoredPosition: {x: 0, y: 29.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57865700
@@ -1396,8 +1396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.086, y: 2.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.086, y: 2.498}
+  m_SizeDelta: {x: 100, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &196160388 stripped
 GameObject:
@@ -7498,7 +7498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.299997}
+  m_AnchoredPosition: {x: 0, y: -2.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559369883
@@ -7522,7 +7522,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Faille spacio-temporelle\nS\xE9curisation r\xE9ussie\nDemandez de l'aide
-    au scientifique"
+    au scientifique\nAppuyez sur une des deux gachettes arrieres pour attraper les
+    objets"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 108ebb9a1d9c11b4b9abec34330722d3, type: 2}
   m_sharedMaterial: {fileID: 7372154519077955756, guid: 108ebb9a1d9c11b4b9abec34330722d3,
