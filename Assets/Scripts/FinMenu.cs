@@ -8,15 +8,22 @@ public class FinMenu : MonoBehaviour
 {
     public Button okButton;
     public TMP_Text Result;
-    public 
-    void Start()
+    public string answer;
+
+    IEnumerator waitTime()
     {
-        Result.gameObject.SetActive(false);
+        Result.color = Color.green;
+        okButton.GetComponent<Image>().color = Color.green;
+        yield return new WaitForSeconds(2);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MenuFin()
     {
-        
+        if (Result.text == answer)
+        {
+            StartCoroutine(waitTime());
+        }
     }
+
+   
 }
