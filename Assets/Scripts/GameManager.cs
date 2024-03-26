@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
             menuFin.SetActive(true);
             if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true)
             {
-                //menuFin.SetActive(true);
+                menuFin.SetActive(true);
                 if(goodAnswer == true)
                 {
                     WinScenario = true;
