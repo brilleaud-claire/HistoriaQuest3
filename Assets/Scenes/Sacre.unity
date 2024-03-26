@@ -5177,7 +5177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entrer un evenement
+  m_text: Cliquer ici
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 108ebb9a1d9c11b4b9abec34330722d3, type: 2}
   m_sharedMaterial: {fileID: 7372154519077955756, guid: 108ebb9a1d9c11b4b9abec34330722d3,
@@ -15130,7 +15130,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1011163569}
   m_HandleRect: {fileID: 1011163568}
   m_Direction: 2
-  m_Value: 0.9999999
+  m_Value: 1
   m_Size: 0.46728975
   m_NumberOfSteps: 0
   m_OnValueChanged:
