@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public static bool WinScenario = false;
     public static bool LooseScenario = false;
     public static float timePassed;
+    public static string answer;
+    public static bool goodAnswer = false;
     public GameObject key;
     public static bool keyInHole = false;
     public static float counterTime = 1800.0f;
