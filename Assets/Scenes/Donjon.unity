@@ -1050,6 +1050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 503755936}
+  menuFin: {fileID: 1449238232}
 --- !u!4 &151719250
 Transform:
   m_ObjectHideFlags: 0
@@ -6641,9 +6642,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1449238232}
-        m_TargetAssemblyTypeName: MenuChange, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1449238234}
+        m_TargetAssemblyTypeName: FinMenu, Assembly-CSharp
+        m_MethodName: MenuFin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6775,7 +6776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   okButton: {fileID: 1406989970}
   Result: {fileID: 1239456563}
-  answer: 
 --- !u!114 &1449238235
 MonoBehaviour:
   m_ObjectHideFlags: 0
