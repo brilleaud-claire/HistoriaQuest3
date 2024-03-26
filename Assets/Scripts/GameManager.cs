@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (counterTime > 0)
         {
             counterTime = 1800 - timePassed;
-            menuFin.SetActive(true);
+            //menuFin.SetActive(true);
             if (SacreSuccess == true && SalonSuccess == true && GuillotineSuccess == true)
             {
                 menuFin.SetActive(true);
